@@ -2,9 +2,11 @@ $(function() {
   "use strict";
 
   //------- Parallax -------//
-  skrollr.init({
-    forceHeight: false
-  });
+  var s = skrollr.init({
+    forceHeight: false,
+    smoothScrolling: false,
+    mobileDeceleration: 0.004
+});
 
   //------- Active Nice Select --------//
   $('select').niceSelect();
@@ -32,29 +34,7 @@ $(function() {
   });
 
   //------- Best Seller Carousel -------//
-  if($('.owl-carousel').length > 0){
-    $('#bestSellerCarousel').owlCarousel({
-      loop:true,
-      margin:30,
-      nav:true,
-      navText: ["<i class='ti-arrow-left'></i>","<i class='ti-arrow-right'></i>"],
-      dots: false,
-      responsive:{
-        0:{
-          items:1
-        },
-        600:{
-          items: 2
-        },
-        900:{
-          items:3
-        },
-        1130:{
-          items:4
-        }
-      }
-    })
-  }
+ 
 
   //------- single product area carousel -------//
   $(".s_Product_carousel").owlCarousel({

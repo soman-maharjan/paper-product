@@ -32,21 +32,12 @@
                     value="{{ old('title') }}">
             </div>
             <div class="form-group">
-                <label for="price">Price</label>
-                <input type="number" class="form-control" placeholder="e.g. 50000" name="price" value="{{ old('price') }}">
-            </div>
-            <div class="form-group">
-                <label for="dimensions">Dimensions</label>
-                <input type="text" class="form-control" placeholder="50 x 50" name="dimensions"
-                    value="{{ old('dimensions') }}">
-            </div>
-            <div class="form-group">
-                <label for="weight">Weight</label>
-                <input type="text" class="form-control" placeholder="e.g. 50" name="weight" value="{{ old('weight') }}">
-            </div>
-            <div class="form-group">
                 <label for="weight">Description</label> <br>
                 <textarea name="description" name="description" cols="65" rows="10">{{ old('description') }}</textarea>
+            </div>
+            <div class="form-group">
+                <label for="color">Color</label> <br>
+                <input type="text" class="form-control" placeholder="e.g. Red" name="color" value="{{ old('color') }}">
             </div>
             <label for="cars">Category:</label>
             <div class="form-group">

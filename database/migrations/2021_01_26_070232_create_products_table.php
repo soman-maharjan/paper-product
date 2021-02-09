@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->integer('price')->nullable();
             $table->string('dimensions')->nullable();
             $table->string('weight')->nullable();
-            $table->string('filename');
+            $table->text('filename');
             $table->unsignedBigInteger('category_id')->nullable();
             $table->timestamps();
 

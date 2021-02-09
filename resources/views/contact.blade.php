@@ -5,7 +5,7 @@
     {{Session::get('alert')}}
 </div>
 @endif
-    <section class="blog-banner-area" id="contact">
+    <section class="blog-banner-area heading-height" id="contact">
         <div class="container h-100">
             <div class="blog-banner">
                 <div class="text-center">
@@ -20,11 +20,9 @@
             </div>
         </div>
     </section>
-
-
     <section style="margin: 40px 0;">
-        <div class="container">
-            <div class="row d-flex mb-5 contact-info">
+        <div class="container-fluid">
+            <div class="row d-flex mb-5 contact-info" style="padding: 10px;text-align: center;">
                 <div class="w-100"></div>
 
                 <div class="col-md-4" style="border-left: 2px solid blue">
@@ -34,7 +32,7 @@
                     <p><span>Address: </span> <br> Bhaktapur Industrial Area, Byasi-15, Bhaktapur, NEPAL</p>
                 </div>
                 <div class="col-md-4" style="border-left: 2px solid blue">
-                    <p><span>Email:</span> <a href="mailto:info@yoursite.com">nepalihandmadepaperproducts@gmail.com</a></p>
+                    <p><span>Email:</span> <a href="mailto:info@yoursite.com" style="line-break: anywhere">nepalihandmadepaperproducts@gmail.com</a></p>
                 </div>
             </div>
             <h2 style="text-align: center">OR</h2>
@@ -48,6 +46,13 @@
                                     <input class="form-control contact-form" name="name" id="name" type="text"
                                         placeholder="Enter your name" value="{{old('name')}}">
                                     @error('name')
+                                        <p style="color: red">{{ $message }}</p>
+                                    @enderror
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control contact-form" name="number" id="number" type="text"
+                                        placeholder="+977 9841551187" value="{{old('number')}}">
+                                    @error('number')
                                         <p style="color: red">{{ $message }}</p>
                                     @enderror
                                 </div>

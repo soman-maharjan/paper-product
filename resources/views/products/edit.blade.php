@@ -31,7 +31,7 @@
                 <input type="title" class="form-control" id="title" placeholder="Enter title" name="title"
                     value="{{ $product->title }}">
             </div>
-            <div class="form-group">
+            {{-- <div class="form-group">
                 <label for="price">Price</label>
                 <input type="number" class="form-control" placeholder="e.g. 50000" name="price" value="{{ $product->price  }}">
             </div>
@@ -43,10 +43,14 @@
             <div class="form-group">
                 <label for="weight">Weight</label>
                 <input type="text" class="form-control" placeholder="e.g. 50" name="weight" value="{{ $product->weight }}">
-            </div>
+            </div> --}}
             <div class="form-group">
                 <label for="weight">Description</label> <br>
                 <textarea name="description" name="description" cols="65" rows="10">{{ $product->description  }}</textarea>
+            </div>
+            <div class="form-group">
+                <label for="color">Color</label> <br>
+                <input type="text" class="form-control" placeholder="e.g. Red" name="color" value="{{$product->color }}">
             </div>
             <label for="cars">Category:</label>
             <div class="form-group">

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <section class="blog-banner-area" id="blog">
+    <section class="blog-banner-area heading-height" id="blog">
         <div class="container h-100">
             <div class="blog-banner">
                 <div class="text-center">
@@ -20,12 +20,12 @@
             <div class="row">
                 <div class="col-lg-12 posts-list">
                     <div class="single-post row">
-                        <div class="col-lg-6 col-md-12">
+                        <div class="col-lg-6 col-md-6">
                             <div class="feature-img">
                                 <img class="img-about-us" src="img/aboutus.jpg" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 blog_details">
+                        <div class="col-lg-6 col-md-6 blog_details">
                             <h2>Nepali Handmade Paper Products</h2>
                             <p class="excert">
                                 Nepali Handmade Paper making is 2000 years old technique and one of the ancient traditional
